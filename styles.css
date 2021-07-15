@@ -1,0 +1,73 @@
+@import 'reset.css';
+
+body {
+    padding: 50px 0;
+    background-color: #f9f9fc;
+    font-family: "JetBrains Mono", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+canvas.paint {
+    width: 700px;
+    height: 700px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow:
+            0 4px 6px rgba(50, 50, 93, 0.11),
+            0 1px 3px rgba(0,0,0,0.88);
+
+}
+
+.controls {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls .controls__range {
+    margin-bottom: 30px;
+}
+
+.controls .controls__buttons {
+    margin-bottom: 30px;
+}
+
+.controls .controls__buttons button {
+    all: unset;
+    cursor: pointer;
+    padding: 5px 0;
+    width: 100px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow:
+            0 4px 6px rgba(50, 50, 93, 0.11),
+            0 1px 3px rgba(0,0,0,0.88);
+    border: 1px solid rgba(0,0,0,0.2);
+    color: rgba(0,0,0,0.8);
+    border-radius: 5px;
+    font-weight: 800;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.controls .controls__buttons button:active {
+    transform: scale(0.98);
+}
+
+.controls .controls__colors {
+    display: flex;
+}
+
+.controls__colors .control__color {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow:
+            0 4px 6px rgba(50, 50, 93, 0.11),
+            0 1px 3px rgba(0,0,0,0.88);
+
+}
